@@ -2,6 +2,8 @@
 
 # install and save python library to requirement.txt file
 function pipins {
+  [ "$#" -lt "1" ] && echo 'Error: specify the python library to install' >&2 && return 1
+
   local PYTHON_LIB=$1
   if [ -z "$2" ]
   then
