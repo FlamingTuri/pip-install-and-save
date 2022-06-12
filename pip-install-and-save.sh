@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install and save python library to requirement.txt file
-function pipis {
+function pipins {
   local PYTHON_LIB=$1
   if [ -z "$2" ]
   then
